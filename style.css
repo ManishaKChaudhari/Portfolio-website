@@ -1,0 +1,259 @@
+.container {
+    width: 100%;
+    height: 1850px;
+    position: relative;
+}
+
+.nav {
+    width: 100%;
+    height: 70px;
+    border: 2px solid black;
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+.home {
+    width: 100%;
+    height: 440px;
+    padding-top: 60px;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    background-color: rgb(20 16 16 / 93%);
+}
+
+.about {
+    width: 100%;
+    height: 550px;
+    padding-top: 80px;
+    /* border: 2px solid black; */
+    background-color: rgb(50 46 46);
+}
+
+.skills {
+    width: 100%;
+    height: 450px;
+    padding-top: 80px;
+    /* border: 2px solid black; */
+    background-color: rgb(54, 53, 53);
+}
+
+.contact {
+    width: 100%;
+    height: 150px;
+    /* margin-top: -60px; */
+    padding-top: 80px;
+    /* border: 2px solid black; */
+    background-color: rgb(179, 175, 175);
+}
+
+.nav .logo {
+    float: left;
+    cursor: pointer;
+}
+
+.nav li {
+    float: right;
+    list-style: none;
+    margin: 13px 20px;
+}
+
+.nav ul {
+    overflow: auto;
+}
+
+.nav li a {
+    padding: 3px 3px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav li a:hover {
+    color: red;
+}
+
+.home .left {
+    grid-column: 1;
+    /* border: 1px solid grey; */
+}
+
+.home .right {
+    grid-column: 2;
+    /* padding: 50px; */
+    /* border: 1px solid grey; */
+}
+
+.home .left .centre {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    /* border: 1px solid pink; */
+}
+
+.about .acentre {
+    /* margin: auto; */
+    margin-left: 40px;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid pink;
+    background-color: grey;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.about .lcentre {
+    /* margin: auto; */
+    float: right;
+    margin-right: 60px;
+    margin-top: -140px;
+    width: 30%;
+    padding-left: 10px;
+    border: 1px solid pink;
+    background-color: grey;
+    ;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.skills .sk {
+    border: 1px solid rgb(29, 29, 28);
+    background-color: grey;
+    list-style: none;
+    margin-left: 40px;
+    /* margin: 0; */
+    border-radius: 15px 15px 15px 15px;
+    width: 40%;
+    padding-left: 20px;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+.skills .sk .li {
+    /* margin: 20px 0;s */
+    padding-top: -10px;
+}
+
+.bar {
+    background-color: #7b828f;
+    display: block;
+    width: 90%;
+    height: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: -10px;
+    transition: all 0.8s cubic-bezier(0.25, .8, .25, 1);
+}
+
+.bar :hover {
+    box-shadow: rgb(255, 107, 107);
+}
+
+.bar span {
+    height: 20px;
+    float: left;
+    background-color: purple;
+}
+
+.html {
+    width: 90%;
+    animation: html 8s;
+}
+
+.css {
+    width: 40%;
+    animation: css 8s;
+}
+
+.Java {
+    width: 85%;
+    animation: Java 8s;
+}
+
+.Python {
+    width: 80%;
+    animation: Python 8s;
+}
+
+.Sql {
+    width: 90%;
+    animation: Sql 3s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes Java {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes Python {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes Sql {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+.inter {
+    /* margin: auto; */
+    float: right;
+    margin-right: 410px;
+    margin-top: -382px;
+    width: 25%;
+    padding-left: 10px;
+    border: 1px solid black;
+    background-color: grey;
+    border-radius: 20px;
+}
+
+.cert {
+    /* margin: auto; */
+    float: right;
+    margin-right: 10px;
+    margin-top: -150px;
+    width: 25%;
+    padding-left: 10px;
+    border: 1px solid rgb(7, 7, 7);
+    background-color: grey;
+    border-radius: 20px;
+}
+
+.contact .con {
+    width: 25%;
+    /* background-color: aliceblue; */
+    padding-bottom: 20px;
+    padding-left: 160px;
+    margin: auto;
+}
